@@ -1,0 +1,113 @@
+.navbar-main .navbar-container{
+        @include desktop{
+            display: flex;
+            justify-content: space-between;
+        }
+    .navbar-brand{
+        .navbar-item img{
+            max-height: 2.5rem;
+            width:auto;
+            @include tablet{
+                max-height: 4rem;
+            }
+        }
+        @include desktop{
+            width: 25%;
+        }
+    }
+    .navbar-center{
+        @include desktop{
+            flex-grow: 1; 
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+        }
+        .navbar-item{
+            @include mobile{
+                border-bottom: 1px solid $gray-medium;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+        }
+    }
+    .navbar-end{
+        @include tablet{
+            position: relative;
+        }
+        @include desktop{
+            width: 25%;
+        }
+        .button.is-primary{
+            @include mobile{
+                width: 100%;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+        .button.is-search{
+            display: none;
+            @include tablet{
+                display: flex;
+            }
+        }
+    }
+   
+}
+
+//dropdown arrow
+.navbar-link:not(.is-arrowless)::after{
+    border-color: $dark;
+    border-radius: 0;
+    border-width: 1px;
+    height: .5rem;
+    width: .5rem;
+
+}
+
+
+
+//submenu-list
+
+ul.submenu-list{
+    list-style: none;
+    li {
+        @include mobile{
+            padding-left: 2%;
+        }
+        a{
+            display: block;
+            padding: .5rem 0;
+            color: $dark;
+            
+            &:hover, &:active{
+                background-color: $primary-bg;
+            }
+            @include desktop{
+                border-bottom: 1px solid $dark;
+            }
+            
+        }
+        ul li a{
+            
+            border-color: $gray-medium;
+        }
+    }
+}
+
+//Tabs
+#anchors{
+    &.is-sticky {
+       @include tablet{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: $white;
+        z-index: 3;
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+        @include radius-lg;
+       }
+    }
+}
+

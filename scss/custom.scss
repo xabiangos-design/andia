@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+
+//colors
+$primary: hsl(27, 87%, 52%);
+$primary-dark: hsl(27, 87%, 44%);
+$primary-bg: hsl(356, 92%, 98%);
+$secondary:#666666;
+$dark:#101010;
+$gray-medium:hsl(60, 1%, 61%);
+$gray-dark:  hsl(0, 0%, 27%);
+$gray-light:hsl(210, 11%, 93%);
+$gray-bg:#f0f0f0;
+$white:#ffffff;
+$danger: hsl(356, 92%, 46%);
+$gray-border: $gray-medium;
+$link-active:$primary;
+$link-focus:$primary-dark;
+$link: $primary;
+
+//Navigation
+$navbar-item-color:$dark;
+$navbar-item-hover-color:$primary;
+$navbar-item-hover-background-color:$primary-bg;
+$navbar-item-active-color:$primary;
+
+//Breadcrumbs
+$breadcrumb-item-color:$white;
+$breadcrumb-item-hover-color:$gray-bg;
+$breadcrumb-item-active-color:$white;
+$breadcrumb-item-separator-color: $gray-bg;
+
+//Tabs
+$tabs-link-active-color:$primary;
+$tabs-link-active-border-bottom-color:$primary;
+$tabs-link-padding:1em;
+
+//Menu (aside)
+// $menu-item-color:$dark;
+// $menu-item-hover-color:$primary;
+
+//Modal
+// $modal-background-background-color:rgba($primary-dark,.8);
+
+//Pagination
+// $pagination-color:$dark;
+// $pagination-current-background-color:$primary-dark;
+
+
+
+//Padding
+$spacing-sm:.5rem;
+$spacing-md:1rem;
+$spacing-lg:2rem;
+$spacing-xl:4rem;
+
+//Font-weight
+// $regular:400;
+// $semi-bold:500;
+// $bold:700;
+
+//Font-size
+$font-size-sm:.9rem;
+$font-size-md:1rem;
+$font-size-lg:2rem;
+$font-size-xl:3rem;
+
+
+
+
+//Mixins
+@mixin radius-sm{
+    border-radius: .5rem;
+}
+
+@mixin radius-md{
+    border-radius: 1rem;
+}
+
+@mixin radius-lg{
+    border-radius: 1rem;
+    @include desktop{
+        border-radius: 2rem;
+    }
+}
+
+@mixin transition{
+    transition: all 0.3s ease;
+}
+
+
+//Bulma stuff
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/grid/_all.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+// @import "../node_modules/bulma/sass/elements/tag.sass";
+// @import "../node_modules/bulma/sass/components/breadcrumb.sass";
+// @import "../node_modules/bulma/sass/components/menu.sass";
+// @import "../node_modules/bulma/sass/elements/table.sass";
+// @import "../node_modules/bulma/sass/elements/progress.sass";
+@import "../node_modules/bulma/sass/components/dropdown.sass";
+@import "../node_modules/bulma/sass/helpers/_all.sass";
+@import "../node_modules/bulma/sass/form/_all";
+@import "../node_modules/bulma/sass/elements/button.sass";
+// @import "../node_modules/bulma/sass/components/tabs.sass";
+// @import "../node_modules/bulma/sass/components/modal.sass";
+// @import "../node_modules/bulma/sass/components/pagination.sass";
+
+
+//Custom
+@import "typography.scss";
+@import "navigation.scss";
+@import "layout.scss";
+@import "sections.scss";
+@import "buttons.scss";
+// @import "hero.scss";
+// @import "banners.scss";
+@import "cards.scss";
+@import "components.scss";
+@import "bulma-checkradio.sass";
+@import "forms.scss";

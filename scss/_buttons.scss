@@ -1,0 +1,49 @@
+.button{
+    &.is-primary{
+        &:visited{
+            color: $white;
+        }
+    }
+    &.is-secondary{
+        color: $primary;
+        background-color: transparent;
+        border: 1px solid $primary;
+        &:hover, &:active{
+            border-color: $primary-dark;
+            color: $primary-dark;
+        }
+    }
+    &.is-outline-white{
+        background-color: transparent;
+        border: 1px solid $white;
+        color: $white;
+        &:active, &:hover{
+            opacity: .8;
+        }
+    }
+    &.is-download{
+        &::before{
+            content: "";
+            background-image: url("../images/download.svg");
+            background-repeat: no-repeat;
+            background-size: 18px;
+            display: inline-block;
+            margin: 0 .5rem 0 0;
+            width: 20px;
+            height: 20px;
+        }
+    }
+    &.is-arrow{
+        &::before{
+            content: "";
+            background-image: url("../images/arrow_forward.svg");
+            background-repeat: no-repeat;
+            background-size: 16px;
+            display: inline-block;
+            margin: 0 .5rem 0 0;
+            width: 20px;
+            height: 20px;
+            margin-top: .3rem;
+        }
+    }
+}

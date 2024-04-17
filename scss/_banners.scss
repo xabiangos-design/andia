@@ -1,0 +1,85 @@
+section.section-banner{
+    background: url(../images/recurso.jpg), $primary;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    @include radius-lg;
+    overflow: hidden;
+    position: relative;
+    @include desktop{
+        background-attachment: fixed;
+    }
+    .copy{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        position: relative;
+        .copy-end{
+            margin-top: auto;
+        }
+    }
+    h2{
+        color: $white;
+        margin-bottom: 4rem;
+        @include tablet{
+            max-width: 10ch;
+            margin-bottom: 6rem;
+        }
+    }
+    .lead{
+        color: $white;
+        margin-bottom: 1.5rem;
+        max-width: 80%;
+        @include tablet{
+            max-width: 33ch;
+        }
+    }
+    .symbol{
+        margin-top: 2rem;
+        @include tablet{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        img{
+            width: 6rem;
+            @include tablet{
+                width: 12rem;
+            }
+        }
+    }
+}
+
+//Boletin
+.banner-boletin{
+    background: url(../images/recurso.jpg), $primary;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    @include radius-lg;
+    overflow: hidden;
+    position: relative;
+    padding: 3rem;
+    width: 100%;
+    .copy{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        position: relative;
+        color: $white;
+        .lead{
+            margin-bottom: 3rem;
+            @include tablet{
+                max-width: 32ch;
+                margin-bottom: 6rem;
+            }
+        }
+        .copy-end{
+            margin-top: auto;
+        }
+    }
+}

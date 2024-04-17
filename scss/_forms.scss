@@ -1,0 +1,35 @@
+:root {
+accent-color: $primary;
+}
+
+*:focus{
+outline: none;
+}
+
+//Select
+.select, .select:not(.is-multiple):not(.is-loading)::after{
+    border-color: $dark;
+    border-width: 1px;
+    border-radius: 0;
+}
+
+
+
+//select over ride
+.select:not(.is-multiple):not(.is-loading)::after, .navbar-link:not(.is-arrowless)::after{
+    border-color: $dark;
+    border-width: 1px;
+    border-radius: 0;
+}
+
+//Plugin Forn 7
+
+input.input.wpcf7-not-valid{
+    border: 2px solid $primary;
+}
+
+.wpcf7-not-valid-tip{
+    color: $primary;
+    background-color: $primary-light;
+    padding: 1rem;
+}

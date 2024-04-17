@@ -1,0 +1,82 @@
+html {
+    scroll-behavior: smooth;
+   /*Comenta la línea (o dale el valor 'auto' a scroll behavior )
+   para probar la diferencia con y sin scroll suavizado*/
+}
+
+header.main-header{
+    padding-top: 1.5rem;
+}
+
+// Flex specifics
+.is-right-tablet{
+    @include tablet{
+        align-self: flex-end;
+        margin-left: 0;
+        text-align: right;
+    }
+}
+
+.space-between-tablet{
+    display: flex;
+    flex-direction: column;
+    @include tablet{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.columns.is-reverse{
+    @include tablet{
+        flex-direction: row-reverse;
+    }
+}
+
+.space-between-col{
+    @include desktop{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        .aligned-bottom{
+            margin-top: 0;
+        }
+    }
+}
+
+.columns.is-reverse-mobile{
+    @include tablet{
+        flex-direction: row-reverse;
+    }
+}
+
+
+
+
+
+//Sticky content
+.sticky{
+    position: sticky;
+    top: 5rem;
+}
+
+
+//Spacing
+.pt-0{
+    padding-top: 0 !important;
+}
+.mt-2{
+    margin-top: 2rem !important;
+}
+.mt-4{
+    margin-top: 4rem !important;
+}
+.mb-2{
+    margin-bottom: 2rem !important;
+}
+.mb-3{
+    margin-bottom: 3rem !important;
+}
+.mb-4{
+    margin-bottom: 4rem !important;
+}
