@@ -1,0 +1,79 @@
+//Videos & maps
+.video-wrapper, .map-wrapper{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    @include radius-md;
+    &.is-large{
+        @include radius-lg;
+        padding-top: 50.25%;
+    }
+    .iframe, video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
+//Pictures
+.pic-wrapper{
+    img{
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        @include radius-md;
+    }
+}
+
+//Promoción destacada
+.destacado{
+    background-color: $gray-bg;
+    @include radius-lg;
+    padding: 1rem;
+    position: relative;
+    .copy{
+        padding-top: 1rem;
+        @include desktop{
+            padding-top: 3rem;
+        }
+        h2{
+            margin-bottom: 1rem;
+        }
+        .lead{
+            @include desktop{
+                max-width: 80%;
+            }
+        }
+    }
+    .logo-promo{
+        img{
+            max-width: 8rem;
+        }
+        margin-top: 3rem;
+        @include desktop{
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+        }
+    }
+    .tag{
+        padding: .3rem .6rem;
+        background-color: $white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        @include radius-xs;
+        font-size: $font-size-xs;
+        display: inline-block;
+        margin-bottom: 1rem;
+        @include desktop{
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+    }
+}
+

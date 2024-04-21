@@ -4,8 +4,56 @@ html {
    para probar la diferencia con y sin scroll suavizado*/
 }
 
-header.main-header{
-    padding-top: 1.5rem;
+main.main{
+    padding: 0 1rem;
+    @include desktop{
+        padding: 0;
+    }
+}
+
+section.section{
+    padding: 3rem 1rem 2rem 1rem ;
+    @include desktop{
+        padding: 3rem 0 2rem 0;
+    }
+    &.bg-gray{
+        background-color: $gray-bg;
+    }
+    &.bg-primary{
+        background-color: $primary;
+        color: $white;
+    }
+}
+
+//Bloque de contacto
+.copy-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    h2{
+        @include font-title-strong;
+        color: $white;
+        margin-bottom: 2rem;
+        @include desktop{
+            max-width: 60%;
+        }
+    }
+    .lead{
+        @include desktop{
+            max-width: 60%;
+        }
+    }
+}
+
+footer.footer{
+    color: $white;
+    background-color: $dark;
+    padding: 3rem 1rem;
+}
+
+.title-wrapper{
+    padding: 3rem 0 2rem 0;
 }
 
 // Flex specifics
@@ -25,6 +73,7 @@ header.main-header{
         justify-content: space-between;
     }
 }
+
 
 .columns.is-reverse{
     @include tablet{
@@ -62,6 +111,9 @@ header.main-header{
 
 
 //Spacing
+.p-0{
+    padding: 0;
+}
 .pt-0{
     padding-top: 0 !important;
 }

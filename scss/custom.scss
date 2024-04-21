@@ -60,6 +60,7 @@ $spacing-xl:4rem;
 // $bold:700;
 
 //Font-size
+$font-size-xs:.7rem;
 $font-size-sm:.9rem;
 $font-size-md:1rem;
 $font-size-lg:2rem;
@@ -69,6 +70,10 @@ $font-size-xl:3rem;
 
 
 //Mixins
+@mixin radius-xs{
+    border-radius: .25rem;
+}
+
 @mixin radius-sm{
     border-radius: .5rem;
 }
@@ -85,7 +90,13 @@ $font-size-xl:3rem;
 }
 
 @mixin transition{
-    transition: all 0.3s ease;
+    transition: all .3s ease-in-out;
+}
+
+@mixin box-shadow{
+    -webkit-box-shadow: 0px 0px 26px -8px rgba(102,102,102,0.35);
+-moz-box-shadow: 0px 0px 26px -8px rgba(102,102,102,0.35);
+box-shadow: 0px 0px 26px -8px rgba(102,102,102,0.35);
 }
 
 
@@ -113,7 +124,6 @@ $font-size-xl:3rem;
 @import "typography.scss";
 @import "navigation.scss";
 @import "layout.scss";
-@import "sections.scss";
 @import "buttons.scss";
 // @import "hero.scss";
 // @import "banners.scss";
