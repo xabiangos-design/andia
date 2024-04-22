@@ -1,4 +1,5 @@
 .button{
+    @include radius-sm;
     &.is-primary{
         &:visited{
             color: $white;
@@ -12,6 +13,9 @@
             border-color: $primary-dark;
             color: $primary-dark;
         }
+    }
+    &.is-dark{
+        background-color: $dark;
     }
     &.is-outline-white{
         background-color: transparent;

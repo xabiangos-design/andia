@@ -55,6 +55,12 @@
     }
 }
 
+//Navbar menu
+.navbar-menu{
+    @include radius-md;
+    padding: 1rem;
+}
+
 //dropdown arrow
 .navbar-link:not(.is-arrowless)::after{
     border-color: $dark;

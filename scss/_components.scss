@@ -39,41 +39,61 @@
         padding-top: 1rem;
         @include desktop{
             padding-top: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            height: 100%;
         }
         h2{
             margin-bottom: 1rem;
+            color: $dark;
         }
         .lead{
+            color: $gray-dark;
             @include desktop{
-                max-width: 80%;
+                max-width: 70%;
             }
         }
     }
     .logo-promo{
         img{
-            max-width: 8rem;
+            max-width: 6rem;
+            @include desktop{
+                max-width: 12rem;
+            }
         }
         margin-top: 3rem;
         @include desktop{
             position: absolute;
             bottom: 1rem;
-            right: 1rem;
+            right: 2rem;
         }
     }
-    .tag{
-        padding: .3rem .6rem;
-        background-color: $white;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        @include radius-xs;
-        font-size: $font-size-xs;
-        display: inline-block;
-        margin-bottom: 1rem;
+    .video-wrapper{
+        @include radius-sm;
         @include desktop{
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
+            @include radius-md;
         }
+    }
+}
+
+//Tag
+
+.tag{
+    padding: .5rem 1rem;
+    background-color: $white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    @include radius-xs;
+    font-size: $font-size-xs;
+    display: inline-block;
+    margin-bottom: 1rem;
+    @include font-bold;
+    @include desktop{
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
     }
 }
 

@@ -50,6 +50,78 @@ footer.footer{
     color: $white;
     background-color: $dark;
     padding: 3rem 1rem;
+    @include desktop{
+        padding: 4rem 0;
+    }
+    p{
+        line-height: 140%;
+    }
+    h3{
+        @include font-regular;
+        color: $gray-medium;
+        font-size: 1rem;
+        letter-spacing: 0;
+        margin-bottom: .5rem;
+    }
+    .footer-block{
+        &.is-horario{
+            @include desktop{
+                p{
+                    max-width: 26ch;
+                }
+            }
+        }
+    }
+    .logo-footer{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        img{
+            max-width: 8rem;
+            margin-top: 1rem;
+            @include tablet{
+                margin-top: 0;
+            }
+            @include desktop{
+                max-width: 10rem;
+            }
+        }
+    }
+    .rrss-footer{
+        display: flex;
+        gap:1rem;
+        flex-direction: row;
+        a {
+            @include transition;
+            img{
+                width: 20px;
+                height: 20px;
+                @include transition;
+            }
+            &:hover, &:active{
+                img{
+                    filter: brightness(100);
+                }
+            }
+        }
+        
+    }
+    .legal-list-footer{
+        display: flex;
+        flex-direction: row;
+        gap:1rem;
+        @include tablet{
+            justify-content: flex-end;
+        }
+        li a{
+            font-size: $font-size-sm;
+            color: $gray-medium;
+            &:hover, &:active{
+                color: $white;
+            }
+        }
+    }
 }
 
 .title-wrapper{
@@ -59,6 +131,13 @@ footer.footer{
 // Flex specifics
 .is-right-tablet{
     @include tablet{
+        align-self: flex-end;
+        margin-left: 0;
+        text-align: right;
+    }
+}
+.is-right-desktop{
+    @include desktop{
         align-self: flex-end;
         margin-left: 0;
         text-align: right;
