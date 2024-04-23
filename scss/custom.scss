@@ -7,7 +7,7 @@ $primary-dark: hsl(27, 87%, 44%);
 $primary-bg: hsl(356, 92%, 98%);
 $secondary:#666666;
 $dark:#232323;
-$gray-medium:hsl(60, 1%, 61%);
+$gray-medium:#dddddd;
 $gray-dark:  hsl(0, 0%, 27%);
 $gray-light:hsl(210, 11%, 93%);
 $gray-bg:#f0f0f0;
@@ -25,10 +25,10 @@ $navbar-item-hover-background-color:$primary-bg;
 $navbar-item-active-color:$primary;
 
 //Breadcrumbs
-$breadcrumb-item-color:$white;
-$breadcrumb-item-hover-color:$gray-bg;
-$breadcrumb-item-active-color:$white;
-$breadcrumb-item-separator-color: $gray-bg;
+$breadcrumb-item-color:$gray-dark;
+$breadcrumb-item-hover-color:$primary;
+$breadcrumb-item-active-color:$dark;
+$breadcrumb-item-separator-color: $gray-border;
 
 //Tabs
 $tabs-link-active-color:$primary;
@@ -60,7 +60,7 @@ $spacing-xl:4rem;
 // $bold:700;
 
 //Font-size
-$font-size-xs:.7rem;
+$font-size-xs:.6rem;
 $font-size-sm:.9rem;
 $font-size-md:1rem;
 $font-size-lg:2rem;
@@ -106,8 +106,9 @@ box-shadow: 0px 0px 26px -8px rgba(102,102,102,0.35);
 @import "../node_modules/bulma/sass/grid/_all.sass";
 @import "../node_modules/bulma/sass/components/navbar.sass";
 @import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/components/breadcrumb.sass";
 // @import "../node_modules/bulma/sass/elements/tag.sass";
-// @import "../node_modules/bulma/sass/components/breadcrumb.sass";
+
 // @import "../node_modules/bulma/sass/components/menu.sass";
 // @import "../node_modules/bulma/sass/elements/table.sass";
 // @import "../node_modules/bulma/sass/elements/progress.sass";
@@ -115,7 +116,7 @@ box-shadow: 0px 0px 26px -8px rgba(102,102,102,0.35);
 @import "../node_modules/bulma/sass/helpers/_all.sass";
 @import "../node_modules/bulma/sass/form/_all";
 @import "../node_modules/bulma/sass/elements/button.sass";
-// @import "../node_modules/bulma/sass/components/tabs.sass";
+@import "../node_modules/bulma/sass/components/tabs.sass";
 // @import "../node_modules/bulma/sass/components/modal.sass";
 // @import "../node_modules/bulma/sass/components/pagination.sass";
 

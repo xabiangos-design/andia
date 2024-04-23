@@ -70,3 +70,29 @@
     width: .5rem;
 
 }
+
+
+//Tabs
+
+nav.tabs{
+    ul{
+        border-bottom: none;
+    }
+    .buttons{
+        @include desktop{
+            padding: 0 1rem;
+        }
+    }
+}
+
+#anchors{
+    &.is-sticky {
+       @include tablet{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: $white;
+        z-index: 9;
+       }
+    }
+}

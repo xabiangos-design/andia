@@ -23,6 +23,19 @@ section.section{
         background-color: $primary;
         color: $white;
     }
+    &.is-bordered{
+        padding-top: 2rem;
+       .container{
+        padding-bottom: 2rem;
+        border-bottom: 1px solid $gray-border;
+       }
+       &.is-sticky{
+        .container{
+            padding: 0;
+            border: none;
+        }
+       }
+    }
 }
 
 //Bloque de contacto
@@ -154,6 +167,8 @@ footer.footer{
 }
 
 
+
+
 .columns.is-reverse{
     @include tablet{
         flex-direction: row-reverse;
@@ -166,8 +181,12 @@ footer.footer{
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
+        align-items: flex-start;
         .aligned-bottom{
             margin-top: 0;
+        }
+        &.is-flex-end{
+            align-items: flex-end;
         }
     }
 }

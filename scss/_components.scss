@@ -37,14 +37,14 @@
     position: relative;
     .copy{
         padding-top: 1rem;
-        @include desktop{
-            padding-top: 3rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: flex-start;
-            height: 100%;
-        }
+        // @include desktop{
+        //     padding-top: 1.5rem;
+        //     display: flex;
+        //     flex-direction: column;
+        //     justify-content: space-between;
+        //     align-items: flex-start;
+        //     height: 100%;
+        // }
         h2{
             margin-bottom: 1rem;
             color: $dark;
@@ -77,24 +77,29 @@
             @include radius-md;
         }
     }
+    .tag{
+        background-color: $white;
+        margin-bottom: 1rem;
+    }
 }
 
 //Tag
-
 .tag{
     padding: .5rem 1rem;
-    background-color: $white;
+    background-color: $primary-light;
     text-transform: uppercase;
     letter-spacing: 1px;
     @include radius-xs;
     font-size: $font-size-xs;
     display: inline-block;
-    margin-bottom: 1rem;
     @include font-bold;
-    @include desktop{
-        position: absolute;
-        top: 2rem;
-        right: 2rem;
-    }
 }
 
+//Promo details
+
+.logo-promo{
+    margin-top: 2rem;
+    img{
+        max-width: 12rem;
+    }
+}
