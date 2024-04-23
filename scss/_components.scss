@@ -51,6 +51,7 @@
         }
         .lead{
             color: $gray-dark;
+            margin-bottom: 2rem;
             @include desktop{
                 max-width: 70%;
             }

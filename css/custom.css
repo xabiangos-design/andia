@@ -5901,7 +5901,8 @@ section.section.bg-gray .card-promocion:hover {
       margin-bottom: 1rem;
       color: #232323; }
     .destacado .copy .lead {
-      color: #454545; }
+      color: #454545;
+      margin-bottom: 2rem; }
       @media screen and (min-width: 1024px) {
         .destacado .copy .lead {
           max-width: 70%; } }
@@ -6836,7 +6837,7 @@ form.form-contacto label {
   font-style: normal; }
 
 form.form-contacto .field {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.2rem; }
   form.form-contacto .field.is-checkbox {
     margin-top: 1rem; }
     form.form-contacto .field.is-checkbox a {
