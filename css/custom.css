@@ -6208,7 +6208,8 @@ section.section.bg-gray .card-promocion:hover {
   .tipologia-item .accordion-item {
     background-color: #ffffff;
     padding: 2rem;
-    border-radius: 1rem; }
+    border-radius: 1rem;
+    margin-bottom: 1rem; }
     .tipologia-item .accordion-item.is-open .ac-content {
       display: block; }
     .tipologia-item .accordion-item .ac-header {

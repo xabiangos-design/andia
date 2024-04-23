@@ -118,6 +118,7 @@
         background-color: $white;
         padding: 2rem;
         @include radius-md;
+        margin-bottom: 1rem;
         &.is-open{
             .ac-content{
                 display: block;
