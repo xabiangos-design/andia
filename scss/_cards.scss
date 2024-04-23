@@ -4,7 +4,8 @@
     @include desktop{
         margin-bottom: 3rem;
     }
-    // @include transition;
+    @include transition;
+    outline: .5rem solid transparent;
     @include radius-md;
     .card-copy{
         display: block;

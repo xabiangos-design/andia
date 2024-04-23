@@ -6090,6 +6090,8 @@ footer.footer {
 .card-promocion {
   margin-bottom: 2rem;
   padding: .5rem;
+  transition: all .3s ease-in-out;
+  outline: .5rem solid transparent;
   border-radius: 1rem; }
   @media screen and (min-width: 1024px) {
     .card-promocion {
@@ -6123,8 +6125,7 @@ section.section.bg-gray .card-promocion:hover {
   /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
   border-radius: 1rem; }
   .video-wrapper.is-large, .map-wrapper.is-large {
-    border-radius: 1rem;
-    padding-top: 50.25%; }
+    border-radius: 1rem; }
     @media screen and (min-width: 1024px) {
       .video-wrapper.is-large, .map-wrapper.is-large {
         border-radius: 2rem; } }
@@ -6134,9 +6135,8 @@ section.section.bg-gray .card-promocion:hover {
     left: 0;
     bottom: 0;
     right: 0;
-    width: 100% !important;
-    height: 100% !important;
-    border: 1px solid #dddddd; }
+    width: 102% !important;
+    height: 100% !important; }
 
 .pic-wrapper img {
   aspect-ratio: 16 / 9;
