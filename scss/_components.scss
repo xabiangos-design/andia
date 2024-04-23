@@ -114,10 +114,13 @@
     }
     .accordion-item{
         background-color: $white;
-        padding: 1.5rem;
+        padding: 1rem;
         @include radius-md;
         margin-bottom: 1rem;
         &.is-open{
+            .ac-header{
+                background-color: $primary-light;
+            }
             .ac-content{
                 display: block;
             }
@@ -128,13 +131,27 @@
             gap: 1rem;
             justify-content: space-between;
             align-items: center;
+            @include radius-sm;
+            padding: 1rem;
+            @include mobile{
+                flex-direction: column;
+                gap: 1rem;
+                align-items: flex-start;
+            }
             .left-side{
                 display: flex;
                 flex-direction: row;
                 gap: 1rem;
                 align-items: baseline;
+                @include desktop{
+                    gap: 4rem;
+                }
                 p.title{
                     @include font-bold;
+                }
+                @include mobile{
+                    flex-direction: column;
+                    gap: 1rem;
                 }
             }
             .right-side{
@@ -145,6 +162,40 @@
         .ac-content{
             display: none;
             margin-top: 2rem;
+            .button{
+                @include mobile{
+                    width: 100%;
+                }
+            }
         }
+    }
+}
+
+//Bloque de contacto
+.copy-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    h2{
+        @include font-title-strong;
+        color: $white;
+        margin-bottom: 2rem;
+        @include desktop{
+            max-width: 63%
+        }
+    }
+    .lead{
+        @include desktop{
+            max-width: 63%
+        }
+    }
+}
+
+//Planos
+figure.plano{
+    text-align: center;
+    img{
+        margin: 0 auto;
     }
 }

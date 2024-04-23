@@ -5697,7 +5697,7 @@ h2 {
   color: #232323; }
   @media screen and (min-width: 769px), print {
     h2 {
-      font-size: 2rem;
+      font-size: 2.2rem;
       letter-spacing: -1px; } }
 
 h3 {
@@ -5858,24 +5858,6 @@ section.section {
         border: none; }
   section.section.section-anchor {
     scroll-margin-top: 6rem; }
-
-.copy-contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%; }
-  .copy-contact h2 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    color: #ffffff;
-    margin-bottom: 2rem; }
-    @media screen and (min-width: 1024px) {
-      .copy-contact h2 {
-        max-width: 60%; } }
-  @media screen and (min-width: 1024px) {
-    .copy-contact .lead, .copy-contact .copy-detail p, .copy-detail .copy-contact p {
-      max-width: 60%; } }
 
 footer.footer {
   color: #ffffff;
@@ -6109,6 +6091,9 @@ footer.footer {
     background-image: url("../images/expand_less.svg"); }
   .toggle:hover, .toggle:active {
     background-color: #fef4ec; }
+  @media screen and (max-width: 768px) {
+    .toggle {
+      width: 100%; } }
 
 .card-promocion {
   margin-bottom: 2rem;
@@ -6230,9 +6215,11 @@ section.section.bg-gray .card-promocion:hover {
     margin-bottom: 1rem; }
   .tipologia-item .accordion-item {
     background-color: #ffffff;
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 1rem;
     margin-bottom: 1rem; }
+    .tipologia-item .accordion-item.is-open .ac-header {
+      background-color: #fef4ec; }
     .tipologia-item .accordion-item.is-open .ac-content {
       display: block; }
     .tipologia-item .accordion-item .ac-header {
@@ -6240,23 +6227,63 @@ section.section.bg-gray .card-promocion:hover {
       flex-direction: row;
       gap: 1rem;
       justify-content: space-between;
-      align-items: center; }
+      align-items: center;
+      border-radius: .5rem;
+      padding: 1rem; }
+      @media screen and (max-width: 768px) {
+        .tipologia-item .accordion-item .ac-header {
+          flex-direction: column;
+          gap: 1rem;
+          align-items: flex-start; } }
       .tipologia-item .accordion-item .ac-header .left-side {
         display: flex;
         flex-direction: row;
         gap: 1rem;
         align-items: baseline; }
+        @media screen and (min-width: 1024px) {
+          .tipologia-item .accordion-item .ac-header .left-side {
+            gap: 4rem; } }
         .tipologia-item .accordion-item .ac-header .left-side p.title {
           font-family: "DM Sans", sans-serif;
           font-optical-sizing: auto;
           font-weight: 600;
           font-style: normal; }
+        @media screen and (max-width: 768px) {
+          .tipologia-item .accordion-item .ac-header .left-side {
+            flex-direction: column;
+            gap: 1rem; } }
       .tipologia-item .accordion-item .ac-header .right-side {
         margin-left: auto;
         align-items: flex-end; }
     .tipologia-item .accordion-item .ac-content {
       display: none;
       margin-top: 2rem; }
+      @media screen and (max-width: 768px) {
+        .tipologia-item .accordion-item .ac-content .button {
+          width: 100%; } }
+
+.copy-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; }
+  .copy-contact h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #ffffff;
+    margin-bottom: 2rem; }
+    @media screen and (min-width: 1024px) {
+      .copy-contact h2 {
+        max-width: 63%; } }
+  @media screen and (min-width: 1024px) {
+    .copy-contact .lead, .copy-contact .copy-detail p, .copy-detail .copy-contact p {
+      max-width: 63%; } }
+
+figure.plano {
+  text-align: center; }
+  figure.plano img {
+    margin: 0 auto; }
 
 .is-checkradio[type="radio"],
 .is-checkradio[type="checkbox"] {

@@ -59,26 +59,7 @@ section.section{
     }
 }
 
-//Bloque de contacto
-.copy-contact{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    h2{
-        @include font-title-strong;
-        color: $white;
-        margin-bottom: 2rem;
-        @include desktop{
-            max-width: 60%;
-        }
-    }
-    .lead{
-        @include desktop{
-            max-width: 60%;
-        }
-    }
-}
+
 
 footer.footer{
     color: $white;

@@ -112,4 +112,7 @@
     &:hover, &:active{
         background-color: $primary-light;
     }
+    @include mobile{
+        width: 100%;
+    }
 }
