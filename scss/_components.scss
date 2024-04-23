@@ -5,7 +5,7 @@
     width: 100%;
     padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
     @include radius-md;
-    @include box-shadow;
+    // @include box-shadow;
     &.is-large{
         @include radius-lg;
         padding-top: 50.25%;
@@ -24,7 +24,7 @@
 
 //Pictures
 .pic-wrapper{
-@include box-shadow;
+// @include box-shadow;
     img{
         aspect-ratio: 16 / 9;
         object-fit: cover;
@@ -104,5 +104,47 @@
     margin-top: 2rem;
     img{
         max-width: 12rem;
+    }
+}
+
+
+//Tipologias
+.tipologia-item{
+    margin: 2rem 0;
+    h3{
+        margin-bottom: 1rem;
+    }
+    .accordion-item{
+        background-color: $white;
+        padding: 2rem;
+        @include radius-md;
+        &.is-open{
+            .ac-content{
+                display: block;
+            }
+        }
+        .ac-header{
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            justify-content: space-between;
+            .left-side{
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+                align-items: baseline;
+                p.title{
+                    @include font-bold;
+                }
+            }
+            .right-side{
+                margin-left: auto;
+                align-items: flex-end;
+            }
+        }
+        .ac-content{
+            display: none;
+            margin-top: 2rem;
+        }
     }
 }

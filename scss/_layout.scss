@@ -5,7 +5,7 @@ html {
 }
 
 main.main{
-    padding: 0 1rem;
+    padding: 0;
     @include desktop{
         padding: 0;
     }
@@ -45,12 +45,17 @@ section.section{
             top: 0;
             width: 100%;
             z-index: 9;
+            padding-bottom: 1.5rem;
+            padding-top: 1.5rem;
            }
         .container{
             padding: 0;
             border: none;
         }
        }
+    }
+    &.section-anchor{
+        scroll-margin-top: 6rem;
     }
 }
 
@@ -214,22 +219,15 @@ footer.footer{
 }
 
 
-
-
-
-//Sticky content
-.sticky{
-    position: sticky;
-    top: 5rem;
-}
-
-
 //Spacing
 .p-0{
     padding: 0;
 }
 .pt-0{
     padding-top: 0 !important;
+}
+.pb-0{
+    padding-bottom: 0 !important;
 }
 .mt-2{
     margin-top: 2rem !important;
@@ -253,14 +251,16 @@ footer.footer{
     margin-top: 2rem;
     .column img{
         @include radius-md;
-        aspect-ratio: 4 / 3;
+        aspect-ratio: 16 / 9;
         object-fit: cover;
         overflow: hidden;
         scale: 1;
         @include transition;
+        outline: .5rem solid transparent;
         &:hover, &:active{
-            @include box-shadow;
+            // @include box-shadow;
             scale: 1.01;
+            outline: .5rem solid $primary-light;
         }
     }
 }

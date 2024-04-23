@@ -28,9 +28,9 @@
     &.is-download{
         &::before{
             content: "";
-            background-image: url("../images/download.svg");
+            background-image: url("../images/arrow_down.svg");
             background-repeat: no-repeat;
-            background-size: 18px;
+            background-size: 20px;
             display: inline-block;
             margin: 0 .5rem 0 0;
             width: 20px;
@@ -62,9 +62,12 @@
     text-align: center;
     background-color: $white;
     @include transition;
+    min-height: 10rem;
     &:hover, &:active{
-        background-color: $primary-light;
         @include box-shadow;
+        -webkit-box-shadow:inset 0px 0px 0px 1rem $primary-light;
+        -moz-box-shadow:inset 0px 0px 0px 1rem $primary-light;
+        box-shadow:inset 0px 0px 0px 1rem$primary-light;
     }
     span{
         &::before{
