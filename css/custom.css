@@ -6087,6 +6087,29 @@ footer.footer {
     height: 50px;
     text-align: center; }
 
+.toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  transition: all .3s ease-in-out;
+  border-radius: .5rem;
+  padding: .5rem 1rem; }
+  .toggle::after {
+    content: "";
+    background-image: url("../images/expand_more.svg");
+    background-repeat: no-repeat;
+    background-size: 13px;
+    display: inline-block;
+    margin: .4rem 0 0 .5rem;
+    width: 13px;
+    height: 13px; }
+  .toggle.is-open::after {
+    content: "";
+    background-image: url("../images/expand_less.svg"); }
+  .toggle:hover, .toggle:active {
+    background-color: #fef4ec; }
+
 .card-promocion {
   margin-bottom: 2rem;
   padding: .5rem;
@@ -6207,7 +6230,7 @@ section.section.bg-gray .card-promocion:hover {
     margin-bottom: 1rem; }
   .tipologia-item .accordion-item {
     background-color: #ffffff;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 1rem;
     margin-bottom: 1rem; }
     .tipologia-item .accordion-item.is-open .ac-content {
@@ -6216,7 +6239,8 @@ section.section.bg-gray .card-promocion:hover {
       display: flex;
       flex-direction: row;
       gap: 1rem;
-      justify-content: space-between; }
+      justify-content: space-between;
+      align-items: center; }
       .tipologia-item .accordion-item .ac-header .left-side {
         display: flex;
         flex-direction: row;

@@ -114,7 +114,7 @@
     }
     .accordion-item{
         background-color: $white;
-        padding: 2rem;
+        padding: 1.5rem;
         @include radius-md;
         margin-bottom: 1rem;
         &.is-open{
@@ -127,6 +127,7 @@
             flex-direction: row;
             gap: 1rem;
             justify-content: space-between;
+            align-items: center;
             .left-side{
                 display: flex;
                 flex-direction: row;

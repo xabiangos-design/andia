@@ -84,3 +84,32 @@
         }
     }
 }
+
+.toggle{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    @include transition;
+    @include radius-sm;
+    padding: .5rem 1rem;
+    &::after{
+        content: "";
+        background-image: url("../images/expand_more.svg");
+        background-repeat: no-repeat;
+        background-size: 13px;
+        display: inline-block;
+        margin: .4rem 0 0 .5rem;
+        width: 13px;
+        height: 13px;
+    }
+    &.is-open{
+        &::after{
+            content: "";
+            background-image: url("../images/expand_less.svg");
+        }
+    }
+    &:hover, &:active{
+        background-color: $primary-light;
+    }
+}
