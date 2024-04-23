@@ -14,7 +14,7 @@ main.main{
 section.section{
     padding: 3rem 1rem 2rem 1rem ;
     @include desktop{
-        padding: 3rem 0 2rem 0;
+        padding: 4rem 0 4rem 0;
     }
     &.bg-gray{
         background-color: $gray-bg;
@@ -23,6 +23,13 @@ section.section{
         background-color: $primary;
         color: $white;
     }
+    &.bg-primary-light{
+        background-color: $primary-light;
+        @include desktop{
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+    }
     &.is-bordered{
         padding-top: 2rem;
        .container{
@@ -30,6 +37,15 @@ section.section{
         border-bottom: 1px solid $gray-border;
        }
        &.is-sticky{
+        background: rgba($white, 0.85);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(5.8px);
+        @include tablet{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 9;
+           }
         .container{
             padding: 0;
             border: none;
@@ -229,4 +245,22 @@ footer.footer{
 }
 .mb-4{
     margin-bottom: 4rem !important;
+}
+
+//Gallery
+
+.columns.is-gallery{
+    margin-top: 2rem;
+    .column img{
+        @include radius-md;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        overflow: hidden;
+        scale: 1;
+        @include transition;
+        &:hover, &:active{
+            @include box-shadow;
+            scale: 1.01;
+        }
+    }
 }

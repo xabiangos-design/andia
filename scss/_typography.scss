@@ -108,9 +108,9 @@
     h2{
       @include font-title-strong;
       margin-bottom: 1.5rem;
-      p{
-        @extend .lead;
-        margin-bottom: 1.5rem;
-      }
+    }
+    p{
+      @extend .lead;
+      margin-bottom: 1.5rem;
     }
   }

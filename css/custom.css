@@ -5716,7 +5716,7 @@ h3 {
   font-weight: 400;
   font-style: normal; }
 
-.lead, .copy-detail h2 p {
+.lead, .copy-detail p {
   font-size: 1.3rem;
   line-height: 135%; }
 
@@ -5742,8 +5742,9 @@ h3 {
   font-weight: 600;
   font-style: normal;
   margin-bottom: 1.5rem; }
-  .copy-detail h2 p {
-    margin-bottom: 1.5rem; }
+
+.copy-detail p {
+  margin-bottom: 1.5rem; }
 
 .navbar.navbar-main {
   padding: .5rem 1rem; }
@@ -5808,14 +5809,6 @@ nav.tabs ul {
   nav.tabs .buttons {
     padding: 0 1rem; } }
 
-@media screen and (min-width: 769px), print {
-  #anchors.is-sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #ffffff;
-    z-index: 9; } }
-
 html {
   scroll-behavior: smooth;
   /*Comenta la línea (o dale el valor 'auto' a scroll behavior )
@@ -5831,20 +5824,36 @@ section.section {
   padding: 3rem 1rem 2rem 1rem; }
   @media screen and (min-width: 1024px) {
     section.section {
-      padding: 3rem 0 2rem 0; } }
+      padding: 4rem 0 4rem 0; } }
   section.section.bg-gray {
     background-color: #f0f0f0; }
   section.section.bg-primary {
     background-color: #ef7a1a;
     color: #ffffff; }
+  section.section.bg-primary-light {
+    background-color: #fef4ec; }
+    @media screen and (min-width: 1024px) {
+      section.section.bg-primary-light {
+        padding-top: 4rem;
+        padding-bottom: 4rem; } }
   section.section.is-bordered {
     padding-top: 2rem; }
     section.section.is-bordered .container {
       padding-bottom: 2rem;
       border-bottom: 1px solid #dddddd; }
-    section.section.is-bordered.is-sticky .container {
-      padding: 0;
-      border: none; }
+    section.section.is-bordered.is-sticky {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(5.8px); }
+      @media screen and (min-width: 769px), print {
+        section.section.is-bordered.is-sticky {
+          position: fixed;
+          top: 0;
+          width: 100%;
+          z-index: 9; } }
+      section.section.is-bordered.is-sticky .container {
+        padding: 0;
+        border: none; }
 
 .copy-contact {
   display: flex;
@@ -5861,7 +5870,7 @@ section.section {
       .copy-contact h2 {
         max-width: 60%; } }
   @media screen and (min-width: 1024px) {
-    .copy-contact .lead, .copy-contact .copy-detail h2 p, .copy-detail h2 .copy-contact p {
+    .copy-contact .lead, .copy-contact .copy-detail p, .copy-detail .copy-contact p {
       max-width: 60%; } }
 
 footer.footer {
@@ -5992,6 +6001,21 @@ footer.footer {
 .mb-4 {
   margin-bottom: 4rem !important; }
 
+.columns.is-gallery {
+  margin-top: 2rem; }
+  .columns.is-gallery .column img {
+    border-radius: 1rem;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    overflow: hidden;
+    scale: 1;
+    transition: all .3s ease-in-out; }
+    .columns.is-gallery .column img:hover, .columns.is-gallery .column img:active {
+      -webkit-box-shadow: 0px 0px 26px -8px rgba(102, 102, 102, 0.35);
+      -moz-box-shadow: 0px 0px 26px -8px rgba(102, 102, 102, 0.35);
+      box-shadow: 0px 0px 26px -8px rgba(102, 102, 102, 0.35);
+      scale: 1.01; }
+
 .button {
   border-radius: .5rem; }
   .button.is-primary:visited {
@@ -6031,6 +6055,33 @@ footer.footer {
     height: 20px;
     margin-top: .3rem; }
 
+.link-gallery {
+  border: 1px solid #ef7a1a;
+  border-radius: 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #ffffff;
+  transition: all .3s ease-in-out; }
+  .link-gallery:hover, .link-gallery:active {
+    background-color: #fef4ec;
+    -webkit-box-shadow: 0px 0px 26px -8px rgba(102, 102, 102, 0.35);
+    -moz-box-shadow: 0px 0px 26px -8px rgba(102, 102, 102, 0.35);
+    box-shadow: 0px 0px 26px -8px rgba(102, 102, 102, 0.35); }
+  .link-gallery span::before {
+    content: "";
+    background-image: url("../images/gallery.svg");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center center;
+    display: block;
+    margin: 0 .5rem 0 0;
+    width: 100%;
+    height: 50px;
+    text-align: center; }
+
 .card-promocion {
   margin-bottom: 2rem;
   padding: .5rem;
@@ -6065,26 +6116,34 @@ section.section.bg-gray .card-promocion:hover {
   width: 100%;
   padding-top: 56.25%;
   /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-  border-radius: 1rem; }
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 0px 26px -8px rgba(102, 102, 102, 0.35);
+  -moz-box-shadow: 0px 0px 26px -8px rgba(102, 102, 102, 0.35);
+  box-shadow: 0px 0px 26px -8px rgba(102, 102, 102, 0.35); }
   .video-wrapper.is-large, .map-wrapper.is-large {
     border-radius: 1rem;
     padding-top: 50.25%; }
     @media screen and (min-width: 1024px) {
       .video-wrapper.is-large, .map-wrapper.is-large {
         border-radius: 2rem; } }
-  .video-wrapper .iframe, .video-wrapper video, .map-wrapper .iframe, .map-wrapper video {
+  .video-wrapper .iframe, .video-wrapper video, .video-wrapper iframe, .map-wrapper .iframe, .map-wrapper video, .map-wrapper iframe {
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     width: 100% !important;
-    height: 100% !important; }
+    height: 100% !important;
+    border: 1px solid #dddddd; }
 
-.pic-wrapper img {
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  border-radius: 1rem; }
+.pic-wrapper {
+  -webkit-box-shadow: 0px 0px 26px -8px rgba(102, 102, 102, 0.35);
+  -moz-box-shadow: 0px 0px 26px -8px rgba(102, 102, 102, 0.35);
+  box-shadow: 0px 0px 26px -8px rgba(102, 102, 102, 0.35); }
+  .pic-wrapper img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 1rem; }
 
 .destacado {
   background-color: #f0f0f0;
@@ -6099,11 +6158,11 @@ section.section.bg-gray .card-promocion:hover {
     .destacado .copy h2 {
       margin-bottom: 1rem;
       color: #232323; }
-    .destacado .copy .lead, .destacado .copy .copy-detail h2 p, .copy-detail h2 .destacado .copy p {
+    .destacado .copy .lead, .destacado .copy .copy-detail p, .copy-detail .destacado .copy p {
       color: #454545;
       margin-bottom: 2rem; }
       @media screen and (min-width: 1024px) {
-        .destacado .copy .lead, .destacado .copy .copy-detail h2 p, .copy-detail h2 .destacado .copy p {
+        .destacado .copy .lead, .destacado .copy .copy-detail p, .copy-detail .destacado .copy p {
           max-width: 70%; } }
   .destacado .logo-promo {
     margin-top: 3rem; }
