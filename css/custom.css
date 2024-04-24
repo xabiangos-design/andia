@@ -6251,6 +6251,15 @@ section.section.bg-gray .card-promocion:hover {
   .card-compromiso h3 {
     margin-bottom: 1rem; }
 
+.card-historico .pic-wrapper {
+  margin-bottom: 1rem; }
+  .card-historico .pic-wrapper img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover; }
+
+.card-historico h3 {
+  margin-bottom: .5rem; }
+
 .video-wrapper, .map-wrapper {
   position: relative;
   overflow: hidden;
