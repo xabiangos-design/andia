@@ -5863,6 +5863,8 @@ footer.footer {
       padding: 4rem 0; } }
   footer.footer p {
     line-height: 140%; }
+  footer.footer a:hover, footer.footer a:active {
+    color: #ffffff; }
   footer.footer h3 {
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
