@@ -7,6 +7,11 @@
     @include transition;
     outline: .5rem solid transparent;
     @include radius-md;
+    @include mobile{
+        background:  $primary-light;
+        margin-bottom: 1rem;
+        border: 1px solid rgba($primary, .1);
+    }
     .card-copy{
         display: block;
         margin:1rem 0 0 0;
@@ -32,9 +37,72 @@
 
 section.section.bg-gray{
     .card-promocion{
+        @include mobile{
+            background-color: $white;
+            border: 1px solid $white;
+        }
         &:hover{
             outline: .5rem solid $white;
             background-color: $white;
+        }
+    }
+}
+
+
+//Promoción destacada
+.destacado{
+    background-color: $primary-light;
+    @include radius-lg;
+    padding: 1rem;
+    position: relative;
+    .copy{
+        padding-top: 1rem;
+        h2{
+            margin-bottom: 1rem;
+            color: $dark;
+        }
+        .lead{
+            color: $gray-dark;
+            margin-bottom: 2rem;
+            @include desktop{
+                max-width: 70%;
+            }
+        }
+    }
+    .logo-promo{
+        img{
+            max-width: 6rem;
+            @include desktop{
+                max-width: 12rem;
+            }
+        }
+        margin-top: 3rem;
+        @include desktop{
+            position: absolute;
+            bottom: 1rem;
+            right: 2rem;
+        }
+    }
+    .video-wrapper{
+        @include radius-sm;
+        @include desktop{
+            @include radius-md;
+        }
+    }
+    .tag{
+        background-color: $white;
+        margin-bottom: 1rem;
+    }
+}
+
+//Pictures
+.pic-wrapper{
+    img{
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        @include radius-sm;
+        @include tablet{
+            @include radius-md;
         }
     }
 }

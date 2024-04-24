@@ -1,7 +1,5 @@
 html {
     scroll-behavior: smooth;
-   /*Comenta la línea (o dale el valor 'auto' a scroll behavior )
-   para probar la diferencia con y sin scroll suavizado*/
 }
 
 main.main{
@@ -12,7 +10,7 @@ main.main{
 }
 
 section.section{
-    padding: 3rem 1rem 2rem 1rem ;
+    padding: 2rem 1rem 1rem 1rem ;
     @include desktop{
         padding: 4rem 0 4rem 0;
     }
@@ -40,14 +38,13 @@ section.section{
         background: rgba($white, 0.85);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(5.8px);
-        @include tablet{
-            position: fixed;
+        // all
+             position: fixed;
             top: 0;
             width: 100%;
             z-index: 9;
             padding-bottom: 1.5rem;
             padding-top: 1.5rem;
-           }
         .container{
             padding: 0;
             border: none;
@@ -167,8 +164,6 @@ footer.footer{
         justify-content: space-between;
     }
 }
-
-
 
 
 .columns.is-reverse{
