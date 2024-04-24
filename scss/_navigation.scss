@@ -4,11 +4,17 @@
         padding: 1rem 0;
     }
     .navbar-brand{
-        .navbar-item img{
-            max-height: 2.5rem;
-            width:auto;
-            @include tablet{
-                max-height: 3rem;
+        .navbar-item {
+            @include mobile{
+                padding-left: 0;
+                padding-right: 0;
+            }
+            img{
+                max-height: 2.5rem;
+                width:auto;
+                @include tablet{
+                    max-height: 3rem;
+                }
             }
         }
         @include desktop{
@@ -17,6 +23,11 @@
     }
     a.navbar-burger{
         @include radius-sm;
+        background-color: $primary-light !important;
+        &:hover, &:active, &:focus{
+            color: $white;
+            background: $primary !important;
+        }
     }
     a.navbar-item:not(.is-logo), .navbar-link{
         @include radius-sm;

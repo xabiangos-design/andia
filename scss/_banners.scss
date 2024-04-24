@@ -1,85 +1,45 @@
-section.section-banner{
-    background: url(../images/recurso.jpg), $primary;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: multiply;
+.banner-coavn{
+    background-color: $dark;
+    color:$white;
     @include radius-lg;
-    overflow: hidden;
-    position: relative;
-    @include desktop{
-        background-attachment: fixed;
+    padding: 1.5rem;
+    @include tablet{
+        padding: 2rem;
     }
-    .copy{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
-        position: relative;
-        .copy-end{
-            margin-top: auto;
-        }
+    @include mobile{
+        margin-bottom: 2rem;
     }
     h2{
         color: $white;
-        margin-bottom: 4rem;
-        @include tablet{
-            max-width: 10ch;
-            margin-bottom: 6rem;
+        @include desktop{
+            font-size: 2rem;
         }
     }
     .lead{
-        color: $white;
-        margin-bottom: 1.5rem;
-        max-width: 80%;
-        @include tablet{
-            max-width: 33ch;
+        @include desktop{
+            max-width: 70%;
         }
     }
-    .symbol{
-        margin-top: 2rem;
-        @include tablet{
-            position: absolute;
-            right: 0;
-            bottom: 0;
-        }
-        img{
-            width: 6rem;
-            @include tablet{
-                width: 12rem;
-            }
-        }
+    .logo-coavn{
+        max-width: 10rem;
     }
-}
-
-//Boletin
-.banner-boletin{
-    background: url(../images/recurso.jpg), $primary;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: multiply;
-    @include radius-lg;
-    overflow: hidden;
-    position: relative;
-    padding: 3rem;
-    width: 100%;
-    .copy{
+    .ediciones{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
-        position: relative;
-        color: $white;
-        .lead{
-            margin-bottom: 3rem;
-            @include tablet{
-                max-width: 32ch;
-                margin-bottom: 6rem;
-            }
+        gap: 2rem;
+        @include tablet{
+            flex-direction: row;
         }
-        .copy-end{
-            margin-top: auto;
+        .edicion{
+            .edicion-pic{
+                margin-bottom: 1rem;
+                img{
+                    aspect-ratio: 1 / 1;
+                    object-fit: cover;
+                    @include radius-sm;
+                }
+            }
+            text-align: center;
         }
     }
 }

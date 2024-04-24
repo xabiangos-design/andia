@@ -61,7 +61,7 @@
 
   h2{
     @include font-title-strong;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     color: $dark;
     @include tablet{
       font-size: 2.2rem;
@@ -84,8 +84,11 @@
   }
 
   .lead{
-    font-size: 1.3rem;
+    font-size: 1rem;
     line-height: 135%;
+    @include tablet{
+      font-size: 1.3rem;
+    }
   }
 
   .lead-large{
@@ -112,5 +115,17 @@
     p{
       @extend .lead;
       margin-bottom: 1.5rem;
+    }
+  }
+
+  .copy.is-corporate{
+      h2{
+        margin-bottom: 1rem;
+        @include desktop{
+          max-width: 80%;
+        }
+    }
+    p{
+      margin-bottom: 1rem;
     }
   }

@@ -10,7 +10,6 @@
     @include mobile{
         background:  $primary-light;
         margin-bottom: 1rem;
-        border: 1px solid rgba($primary, .1);
     }
     .card-copy{
         display: block;
@@ -39,7 +38,6 @@ section.section.bg-gray{
     .card-promocion{
         @include mobile{
             background-color: $white;
-            border: 1px solid $white;
         }
         &:hover{
             outline: .5rem solid $white;
