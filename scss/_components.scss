@@ -143,17 +143,21 @@ figure.plano{
     }
 }
 
-//Pic wrapper
+
+
+//Pictures
 .pic-wrapper{
     img{
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
         @include radius-sm;
-        @include desktop{
+        @include tablet{
             @include radius-md;
         }
     }
     &.is-large{
-       img{
-        @include radius-lg;
-       }
-    }
+        img{
+         @include radius-lg;
+        }
+     }
 }

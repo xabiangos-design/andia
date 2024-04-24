@@ -71,7 +71,7 @@
 
   h3{
     @include font-title-strong;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: $dark;
     @include tablet{
       font-size: 1.5rem;
@@ -127,5 +127,8 @@
     }
     p{
       margin-bottom: 1rem;
+    }
+    @include mobile{
+      margin-bottom: 3rem;
     }
   }

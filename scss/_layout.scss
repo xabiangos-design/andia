@@ -142,9 +142,9 @@ footer.footer{
 }
 
 .title-wrapper{
-    padding: 2rem 0 1rem 0;
-    @include tablet{
-        padding: 3rem 0 2rem 0;
+    padding:  1rem 0;
+    @include desktop{
+        padding: 1rem 0 2rem 0;
     }
 }
 
