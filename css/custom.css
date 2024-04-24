@@ -6260,6 +6260,10 @@ section.section.bg-gray .card-promocion:hover {
 .card-historico h3 {
   margin-bottom: .5rem; }
 
+@media screen and (max-width: 768px) {
+  .card-historico {
+    margin-bottom: 2rem; } }
+
 .video-wrapper, .map-wrapper {
   position: relative;
   overflow: hidden;
