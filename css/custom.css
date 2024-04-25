@@ -6071,6 +6071,15 @@ footer.footer {
     margin: 0 .5rem 0 0;
     width: 20px;
     height: 20px; }
+  .button.is-video::before {
+    content: "";
+    background-image: url("../images/play.svg");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    display: inline-block;
+    margin: 0 .5rem 0 0;
+    width: 20px;
+    height: 20px; }
   .button.is-arrow::before {
     content: "";
     background-image: url("../images/arrow_forward.svg");
