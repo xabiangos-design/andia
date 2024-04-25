@@ -11,6 +11,8 @@
     <link rel="manifest" href="images/icon/site.webmanifest">
     <meta name="msapplication-TileColor" content="#EF7918">
     <meta name="theme-color" content="#ffffff">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- andia -->
     <link rel="stylesheet" href="css/custom.css">
   </head>
@@ -71,7 +73,7 @@
     </nav>
 
     <main class="main">
-      <section class="section">
+      <section class="section aos-init aos-animate" data-aos="fade-up" data-aos-offset="2">
         <div class="container">
           <div class="video-wrapper is-large">
             <!-- <iframe width="560" height="315" class="iframe" src="https://www.youtube.com/embed/f7wJbar1XiU?si=YeMhpQKCP9NKmxCz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay playsinline; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
@@ -82,7 +84,7 @@
           </div> <!-- video-wrapper -->
         </div> <!-- container -->
       </section>
-      <section class="section">
+      <section class="section aos-init aos-animate" data-aos="fade-up" data-aos-offset="2">
         <div class="container">
           <div class="title-wrapper">
             <h1>Promociones en venta</h1>
@@ -92,7 +94,10 @@
             <div class="columns is-multiline is-variable is-6-desktop">
               <div class="column is-12-tablet is-6-desktop">
                 <div class="video-wrapper">
-                  <iframe width="560" height="315" class="iframe" src="https://www.youtube.com/embed/f7wJbar1XiU?si=YeMhpQKCP9NKmxCz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay playsinline; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <video autoplay playsinline controls muted>
+                    <source width="1920" height="1080" src="videos/lezkairu.mp4" type="video/mp4">
+                    Tu navegador no admite el elemento <code>video</code>.
+                  </video>
                 </div> <!-- video-wrapper -->
               </div><!-- column -->
               <div class="column is-12-tablet is-6-desktop">
@@ -118,7 +123,7 @@
           </div><!-- destacado -->
         </div> <!-- container -->
       </section>
-      <section class="section ">
+      <section class="section aos-init aos-animate" data-aos="fade-up" data-aos-offset="2">
         <div class="container">
           <div class="columns is-multiline">
             <div class="column is-12-tablet is-6-desktop">
@@ -181,7 +186,7 @@
           </div><!-- columns -->
         </div><!-- container -->
       </section>
-      <section class="section bg-gray">
+      <section class="section bg-gray aos-init aos-animate" data-aos="fade-up" data-aos-offset="2">
         <div class="container">
           <div class="title-wrapper">
             <h2>Locales, garajes y trasteros</h2>
@@ -247,7 +252,7 @@
       </section>
     </main>
 
-    <section class="section bg-primary" id="contacto">
+    <section class="section bg-primary aos-init aos-animate" id="contacto" data-aos="fade-up" data-aos-offset="2">
       <div class="container">
         <div class="columns is-multiline">
           <div class="column is-12-tablet is-6-desktop">
@@ -365,6 +370,10 @@
         </div><!-- columns -->
       </div><!-- container -->
     </footer>
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init();</script>
 
      <!-- custom -->
      <script src="js/custom.js"></script>

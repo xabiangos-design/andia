@@ -11,6 +11,8 @@
     <link rel="manifest" href="images/icon/site.webmanifest">
     <meta name="msapplication-TileColor" content="#EF7918">
     <meta name="theme-color" content="#ffffff">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- andia -->
     <link rel="stylesheet" href="css/custom.css">
   </head>
@@ -71,12 +73,12 @@
     </nav>
 
     <main class="main">
-      <section class="section  pb-0">
+      <section class="section pb-0">
         <div class="container">
             <h1 class="title-large">Histórico de promociones</h1>
         </div><!-- container -->
       </section>
-      <section class="section">
+      <section class="section aos-init aos-animate" data-aos="fade-up" data-aos-offset="2">
         <div class="container">
             <div class="columns is-multiline">
                 <div class="column is-3-desktop is-6-tablet">
@@ -151,7 +153,7 @@
       
     </main>
 
-    <section class="section bg-primary" id="contacto">
+    <section class="section bg-primary aos-init aos-animate" id="contacto" data-aos="fade-up" data-aos-offset="2">
         <div class="container">
           <div class="columns is-multiline">
             <div class="column is-12-tablet is-6-desktop">
@@ -288,8 +290,12 @@
         }
       </script>
 
+      <!-- aos -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script> AOS.init();</script>
+
        <!-- custom -->
-    <script src="js/custom.js"></script>
+      <script src="js/custom.js"></script>
      
 
   </body>

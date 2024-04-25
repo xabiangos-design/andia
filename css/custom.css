@@ -6005,8 +6005,11 @@ footer.footer {
 .pt-0 {
   padding-top: 0 !important; }
 
+.pt-4 {
+  padding-top: 4rem !important; }
+
 .pb-3 {
-  padding-bottom: 3 !important; }
+  padding-bottom: 3rem !important; }
 
 .pb-0 {
   padding-bottom: 0 !important; }
