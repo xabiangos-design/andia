@@ -6005,6 +6005,9 @@ footer.footer {
 .pt-0 {
   padding-top: 0 !important; }
 
+.pb-3 {
+  padding-bottom: 3 !important; }
+
 .pb-0 {
   padding-bottom: 0 !important; }
 
@@ -6157,7 +6160,9 @@ footer.footer {
     .banner-coavn .lead, .banner-coavn .copy-detail p, .copy-detail .banner-coavn p {
       max-width: 70%; } }
   .banner-coavn .logo-coavn {
-    max-width: 10rem; }
+    margin-bottom: 1rem; }
+    .banner-coavn .logo-coavn img {
+      max-width: 8rem; }
   .banner-coavn .ediciones {
     display: flex;
     flex-direction: column;
