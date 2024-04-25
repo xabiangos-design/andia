@@ -6300,6 +6300,26 @@ section.section.bg-gray .card-promocion:hover {
   .card-historico {
     margin-bottom: 2rem; } }
 
+.card-contacto {
+  border-radius: 1rem;
+  padding: 2rem 0 0 0;
+  height: 100%;
+  margin-bottom: 2rem; }
+  @media screen and (min-width: 1024px) {
+    .card-contacto {
+      border-radius: 2rem; } }
+  @media screen and (min-width: 1024px) {
+    .card-contacto {
+      max-width: 80%;
+      margin-bottom: 0; } }
+  .card-contacto ul.list-contact li {
+    padding: 1rem 0 .5rem 0;
+    border-bottom: 1px solid rgba(35, 35, 35, 0.1); }
+  .card-contacto h2.is-small, .card-contacto p {
+    font-size: 1rem;
+    letter-spacing: 0;
+    margin-bottom: .5rem; }
+
 .video-wrapper, .map-wrapper {
   position: relative;
   overflow: hidden;
