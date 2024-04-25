@@ -104,6 +104,7 @@
         height: 13px;
     }
     &.is-open{
+        color: $dark;
         &::after{
             content: "";
             background-image: url("../images/expand_less.svg");
