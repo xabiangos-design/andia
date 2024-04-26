@@ -164,3 +164,15 @@ figure.plano{
         }
     }
 }
+
+
+//Splide slides
+
+.splide{
+    margin-bottom: 3rem;
+    img{
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        @include radius-sm;
+    }
+}

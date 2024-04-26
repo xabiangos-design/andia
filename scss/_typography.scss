@@ -95,13 +95,13 @@
   }
 
   .lead-large{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 120%;
     color: $gray-dark;
     margin-top: 1rem;
     @include desktop{
       max-width: 44ch;
-      font-size: 1.7rem;
+      font-size: 1.5rem;
     line-height: 135%;
     }
   }
@@ -119,13 +119,13 @@
       @extend .lead;
       margin-bottom: 1.5rem;
     }
-    // .copy-top{
-    //   .lead{
-    //     @include desktop{
-    //       max-width: 70%;
-    //     }
-    //   }
-    // }
+    .copy-top{
+      .lead{
+        @include desktop{
+          max-width: 90%;
+        }
+      }
+    }
   }
 
   .copy.is-corporate{

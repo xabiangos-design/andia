@@ -5723,14 +5723,14 @@ h3 {
       font-size: 1.3rem; } }
 
 .lead-large {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 120%;
   color: #454545;
   margin-top: 1rem; }
   @media screen and (min-width: 1024px) {
     .lead-large {
       max-width: 44ch;
-      font-size: 1.7rem;
+      font-size: 1.5rem;
       line-height: 135%; } }
 
 .strong {
@@ -5747,6 +5747,10 @@ h3 {
 
 .copy-detail p {
   margin-bottom: 1.5rem; }
+
+@media screen and (min-width: 1024px) {
+  .copy-detail .copy-top .lead, .copy-detail .copy-top p {
+    max-width: 90%; } }
 
 .copy.is-corporate h2 {
   margin-bottom: 1rem; }
@@ -5825,12 +5829,37 @@ h3 {
   height: .5rem;
   width: .5rem; }
 
-nav.tabs ul {
+@media screen and (min-width: 1024px) {
+  nav.tabs.tabs-submenu {
+    justify-content: space-between; } }
+
+nav.tabs.tabs-submenu ul {
   border-bottom: none; }
 
-@media screen and (min-width: 1024px) {
-  nav.tabs .buttons {
-    padding: 0 1rem; } }
+nav.tabs.tabs-submenu .buttons {
+  flex-wrap: nowrap; }
+  @media screen and (min-width: 1024px) {
+    nav.tabs.tabs-submenu .buttons {
+      padding: 0 1rem; } }
+
+nav.tabs.tabs-pics {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem; }
+  nav.tabs.tabs-pics ul {
+    border-bottom: 0;
+    gap: 1rem; }
+    nav.tabs.tabs-pics ul li {
+      transition: all .3s ease-in-out; }
+      nav.tabs.tabs-pics ul li a {
+        background-color: transparent;
+        border-radius: 100px;
+        border: 1px solid #fef4ec;
+        color: #454545;
+        margin-bottom: 0;
+        padding: 1rem 1.25rem; }
+      nav.tabs.tabs-pics ul li.is-active a, nav.tabs.tabs-pics ul li:hover a, nav.tabs.tabs-pics ul li:active a {
+        background-color: #fef4ec;
+        color: #232323; }
 
 html {
   scroll-behavior: smooth; }
@@ -5868,19 +5897,20 @@ section.section {
     section.section.is-bordered .container {
       padding-bottom: 2rem;
       border-bottom: 1px solid #dddddd; }
-    section.section.is-bordered.is-sticky {
-      background: rgba(255, 255, 255, 0.85);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(5.8px);
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 9;
-      padding-bottom: 1rem;
-      padding-top: 1rem; }
-      section.section.is-bordered.is-sticky .container {
-        padding: 0;
-        border: none; }
+  section.section.is-sticky {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(5.8px);
+    margin: 0;
+    border-radius: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    padding: 0; }
+    section.section.is-sticky .container {
+      padding: 1rem 0;
+      border: none; }
   section.section.section-anchor {
     scroll-margin-top: 6rem; }
 
@@ -6029,19 +6059,17 @@ footer.footer {
 .mb-4 {
   margin-bottom: 4rem !important; }
 
-.columns.is-gallery {
-  margin-top: 2rem; }
-  .columns.is-gallery .column img {
-    border-radius: 1rem;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    overflow: hidden;
-    scale: 1;
-    transition: all .3s ease-in-out;
-    outline: .5rem solid transparent; }
-    .columns.is-gallery .column img:hover, .columns.is-gallery .column img:active {
-      scale: 1.01;
-      outline: 0.5rem solid #fef4ec; }
+.columns.is-gallery .column img {
+  border-radius: 1rem;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  overflow: hidden;
+  scale: 1;
+  transition: all .3s ease-in-out;
+  outline: .5rem solid transparent; }
+  .columns.is-gallery .column img:hover, .columns.is-gallery .column img:active {
+    scale: 1.01;
+    outline: 0.5rem solid #fef4ec; }
 
 .button {
   border-radius: .5rem; }
@@ -6457,6 +6485,13 @@ figure.plano {
   @media screen and (min-width: 1024px) {
     .copy-contact .lead, .copy-contact .copy-detail p, .copy-detail .copy-contact p {
       max-width: 63%; } }
+
+.splide {
+  margin-bottom: 3rem; }
+  .splide img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: .5rem; }
 
 .is-checkradio[type="radio"],
 .is-checkradio[type="checkbox"] {

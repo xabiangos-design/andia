@@ -8,9 +8,11 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/icon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/icon/favicon-16x16.png">
-    <link rel="manifest" href="images/icon/site.webmanifest">
+    
     <meta name="msapplication-TileColor" content="#EF7918">
     <meta name="theme-color" content="#ffffff">
+    <!-- splide -->
+    <link rel="stylesheet" href="css/splide.min.css">
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- andia -->
@@ -36,10 +38,10 @@
       
           <div class="navbar-end">
             <a class="navbar-item" href="index.html">
-              Próximamente
-            </a>
-            <a class="navbar-item" href="viviendas.html">
               Viviendas
+            </a>
+            <a class="navbar-item" href="proximamente.html">
+              Próximamente
             </a>
             <a class="navbar-item" href="locales.html">
               Locales y oficinas
@@ -73,7 +75,7 @@
     </nav>
 
     <main class="main">
-      <section class="section pb-0">
+      <section class="section pb-0" id="top">
         <div class="container">
             <nav class="breadcrumb" aria-label="breadcrumbs">
                 <ul>
@@ -83,7 +85,7 @@
               </nav>
         </div> <!-- container -->
       </section>
-      <section class="section section-anchor aos-init aos-animate" id="top" data-aos="fade-up" data-aos-offset="2">
+      <section class="section section-anchor aos-init aos-animate" data-aos="fade-up" data-aos-offset="2">
         <div class="container">
             <div class="columns is-multiline">
                 <div class="column is-8-desktop is-12-tablet">
@@ -113,29 +115,29 @@
           </div> <!-- video-wrapper -->
         </div> <!-- container -->
       </section>
-      <section class="section is-bordered" id="anchors">
+      <section class="section pt-0" id="anchors">
        <div class="container">
-        <nav class="tabs is-centered">
+        <nav class="tabs tabs-submenu">
             <ul>
               <li class="is-active"><a href="#top">Presentación</a></li>
               <li><a href="#ubicacion">Ubicación</a></li>
-              <li><a href="#entorno">Conoce el entorno</a></li>
               <li><a href="#imagenes">Galería de imágenes</a></li>
               <li><a href="#tipologia">Tipología</a></li>
               <li>
-                <div class="buttons">
-                    <a class="button is-secondary" href="#" target="_blank">Descarga el catálogo</a>
-                    <a class="button is-primary" href="#contacto">Pide cita previa</a>
-                </div>
               </li>
             </ul>
+            <div class="buttons">
+              <a class="button is-secondary is-download" href="#" target="_blank">Catálogo</a>
+              <a class="button is-secondary is-download" href="#" target="_blank">Memoria de calidades</a>
+              <a class="button is-primary" href="#contacto">Pide cita previa</a>
+          </div>
           </nav>
        </div><!-- container -->
       </section>
-      <section class="section section-anchor aos-init aos-animate" id="ubicacion" data-aos="fade-up" data-aos-offset="2">
+      <section class="section bg-primary-light section-anchor aos-init aos-animate" id="ubicacion" data-aos="fade-up" data-aos-offset="2">
         <div class="container">
             <div class="columns is-multiline">
-                <div class="column is-5-desktop is-6-tablet">
+                <div class="column is-5-desktop is-12-tablet">
                     <div class="copy-detail space-between-col">
                         <div class="copy-top">
                             <h2>Ubicación</h2>
@@ -145,39 +147,37 @@
                             <p>
                                 Con excelentes conexiones con toda la Comarca en transporte privado, público, carril bici a un paseo del centro de Pamplona. 
                             </p>
+                            <p>
+                              Entremutilvas, un barrio joven y consolidado que ofrece multitud servicios e instalaciones, facilitando tu vida y la de los tuyos.
+                          </p>
                         </div>
+                        
                         <a class="button is-secondary is-download">Descarga el plano</a>
                     </div><!-- copy-detail -->
                 </div><!-- column -->
-                <div class="column is-7-desktop is-6-tablet">
-                    <div class="map-wrapper">
-                        <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1031.2441556659765!2d-1.642369247649212!3d42.81079191683314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5093b006657e65%3A0x7bdcde36d6df2c74!2sLezkairu%2C%20Pamplona%2C%20Navarra!5e0!3m2!1ses!2ses!4v1713870960740!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div><!-- copy-detail -->
+                <div class="column is-7-desktop is-12-tablet">
+                  <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1848.019861918864!2d-1.6245481943821893!3d42.80510929195031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5093b006657e65%3A0x7bdcde36d6df2c74!2sLezkairu%2C%20Pamplona%2C%20Navarra!5e1!3m2!1ses!2ses!4v1714164450538!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div><!-- map-wrapper -->
                 </div><!-- column -->
             </div><!-- columns -->
-        </div><!-- container -->
-      </section>
-      <section class="section section-anchor aos-init aos-animate bg-primary-light" id="entorno" data-aos="fade-up" data-aos-offset="2">
-        <div class="container">
-            <div class="columns is-multiline">
-                <div class="column is-6-desktop">
-                    <div class="copy-detail">
-                        <h2>Conoce el entorno</h2>
-                        <p>
-                            Entremutilvas, un barrio joven y consolidado que ofrece multitud servicios e instalaciones, facilitando tu vida y la de los tuyos.
-                        </p>
-                    </div><!-- copy-detail -->
-                </div><!-- column -->
-            </div><!-- columns -->
-            <div class="video-wrapper is-large " >
-                <iframe width="560" height="315" class="iframe" src="https://www.youtube.com/embed/f7wJbar1XiU?si=YeMhpQKCP9NKmxCz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay playsinline; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div> <!-- video-wrapper -->
+            <div class="video-wrapper is-large mt-4" >
+              <iframe width="560" height="315" class="iframe" src="https://www.youtube.com/embed/f7wJbar1XiU?si=YeMhpQKCP9NKmxCz" title="YouTube video player" frameborder="0" allow="accelerometer;  playsinline; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div> <!-- video-wrapper -->
         </div><!-- container -->
       </section>
       <section class="section section-anchor aos-init aos-animate pt-4" id="imagenes" data-aos="fade-up" data-aos-offset="2">
         <div class="container">
             <h2>Galería de imágenes</h2>
-            <div class="columns is-multiline is-gallery">
+            <nav class="tabs tabs-pics">
+              <ul>
+                <li class="is-active"><a>Exteriores</a></li>
+                <li><a>Interiores</a></li>
+                <li><a>Terrazas</a></li>
+              </ul>
+            </nav>
+            <!-- Sólo desktop -->
+            <div class="columns is-multiline is-gallery is-hidden-touch">
                 <div class="column is-4-desktop is-6-tablet">
                     <a title="Ampliar imagen">
                         <img src="images/pruebas.jpg" alt="Construcciones Andía" width="" height="">
@@ -209,6 +209,33 @@
                     </a>
                 </div><!-- column -->
             </div><!-- columns -->
+            <!-- Sólo touch -->
+            <div class="splide is-hidden-desktop">
+              <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                      <a title="Ampliar imagen">
+                        <img src="images/pruebas.jpg" alt="Construcciones Andía" width="" height="">
+                    </a>
+                    </li>
+                    <li class="splide__slide">
+                      <a title="Ampliar imagen">
+                        <img src="images/prueba2.jpg" alt="Construcciones Andía" width="" height="">
+                    </a>
+                    </li>
+                    <li class="splide__slide">
+                      <a title="Ampliar imagen">
+                        <img src="images/pruebas.jpg" alt="Construcciones Andía" width="" height="">
+                    </a>
+                    </li>
+                    <li class="splide__slide">
+                      <a class="link-gallery" title="Ver galería completa">
+                        <span>Ver galería completa</span>
+                    </a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
         </div><!-- container -->
       </section>
       <section class="section section-anchor bg-gray  aos-init aos-animate" id="tipologia" data-aos="fade-up" data-aos-offset="2">
@@ -223,6 +250,7 @@
                                 <p class="title">P1 • Bajo A</p>
                                 <p class="size">79,20 m<sup>2</sup></p>
                                 <p class="rooms">1 dormitorio</p>
+                                <p class="pricing">Desde 350.000€</p>
                             </div><!-- left-side -->
                             <div class="right-side">
                                 <a class="toggle is-open">Ver plano</a>
@@ -243,6 +271,7 @@
                                 <p class="title">P2 • Bajo A</p>
                                 <p class="size">79,20 m<sup>2</sup></p>
                                 <p class="rooms">1 dormitorio</p>
+                                <p class="pricing">Desde 350.000€</p>
                             </div><!-- left-side -->
                             <div class="right-side">
                                 <a class="toggle">Ver plano</a>
@@ -263,6 +292,7 @@
                                 <p class="title">P3 • Bajo A</p>
                                 <p class="size">79,20 m<sup>2</sup></p>
                                 <p class="rooms">1 dormitorio</p>
+                                <p class="pricing">Desde 350.000€</p>
                             </div><!-- left-side -->
                             <div class="right-side">
                                 <a class="toggle">Ver plano</a>
@@ -286,6 +316,7 @@
                                 <p class="title">P3 • Bajo A</p>
                                 <p class="size">79,20 m<sup>2</sup></p>
                                 <p class="rooms">2 dormitorios</p>
+                                <p class="pricing">Desde 350.000€</p>
                             </div><!-- left-side -->
                             <div class="right-side">
                                 <a class="toggle">Ver plano</a>
@@ -309,6 +340,7 @@
                                 <p class="title">P3 • Bajo A</p>
                                 <p class="size">79,20 m<sup>2</sup></p>
                                 <p class="rooms">3 dormitorios</p>
+                                <p class="pricing">Desde 350.000€</p>
                             </div><!-- left-side -->
                             <div class="right-side">
                                 <a class="toggle">Ver plano</a>
@@ -471,6 +503,18 @@
       <!-- aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script> AOS.init();</script>
+
+    <!-- splide -->
+    <script src="js/splide.min.js"></script>
+    <script>
+        var splide = new Splide( '.splide', {
+        type  : 'fade',
+        rewind: true,
+        lazyLoad: 'nearby',
+      } );
+
+      splide.mount();
+    </script>
 
     <!-- custom -->
     <script src="js/custom.js"></script>

@@ -40,23 +40,24 @@ section.section{
         padding-bottom: 2rem;
         border-bottom: 1px solid $gray-border;
        }
-       &.is-sticky{
+    }
+    &.is-sticky{
         background: rgba($white, 0.85);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(5.8px);
+        margin: 0;
+        @include radius-md;
         // all
              position: fixed;
             top: 0;
             width: 100%;
             z-index: 9;
-            padding-bottom: 1rem;
-            padding-top: 1rem;
+            padding:0;
         .container{
-            padding: 0;
+            padding: 1rem 0;
             border: none;
         }
        }
-    }
     &.section-anchor{
         scroll-margin-top: 6rem;
     }
@@ -252,7 +253,6 @@ footer.footer{
 //Gallery
 
 .columns.is-gallery{
-    margin-top: 2rem;
     .column img{
         @include radius-md;
         aspect-ratio: 16 / 9;
