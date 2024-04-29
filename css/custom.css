@@ -6375,6 +6375,8 @@ section.section.bg-gray .card-promocion:hover {
     right: 0;
     width: 102% !important;
     height: 100% !important; }
+  .video-wrapper iframe, .map-wrapper iframe {
+    margin-left: -1%; }
 
 .pic-wrapper img {
   aspect-ratio: 16 / 9;
