@@ -6368,15 +6368,14 @@ section.section.bg-gray .card-promocion:hover {
     padding-top: 75%;
     /* 4:3 Aspect Ratio */ }
   .video-wrapper .iframe, .video-wrapper video, .video-wrapper iframe, .map-wrapper .iframe, .map-wrapper video, .map-wrapper iframe {
+    border-radius: 1rem;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    width: 102% !important;
+    width: 100% !important;
     height: 100% !important; }
-  .video-wrapper iframe, .map-wrapper iframe {
-    margin-left: -1%; }
 
 .pic-wrapper img {
   aspect-ratio: 16 / 9;

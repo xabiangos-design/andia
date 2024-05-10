@@ -17,18 +17,20 @@
         padding-top: 75%; /* 4:3 Aspect Ratio */
     }
     .iframe, video, iframe {
+        @include radius-md;
         position: absolute;
         top: 0;
         left: 0;
         bottom: 0;
         right: 0;
-        width: 102% !important;
+        // width: 102% !important;
+        width: 100% !important;
         height: 100% !important;
         // mix-blend-mode: multiply;
     }
-    iframe{
-        margin-left: -1%;
-    }
+    // iframe{
+    //     margin-left: -1%;
+    // }
 }
 
 //Pictures
