@@ -61,7 +61,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     @include radius-xs;
-    font-size: $font-size-xs;
+    font-size: $font-size-sm;
     display: inline-block;
     @include font-bold;
 }
