@@ -6406,6 +6406,9 @@ section.section.bg-gray .card-promocion:hover {
   font-weight: 600;
   font-style: normal; }
 
+.link-ad {
+  margin-top: .5rem; }
+
 .logo-promo {
   margin-top: 2rem; }
   .logo-promo img {
