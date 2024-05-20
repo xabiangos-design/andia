@@ -5765,6 +5765,22 @@ h3 {
   .copy.is-corporate {
     margin-bottom: 3rem; } }
 
+.copy-legal p {
+  margin-bottom: 1; }
+
+.copy-legal h1, .copy-legal h2, .copy-legal h3, .copy-legal h4, .copy-legal h5, .copy-legal h6 {
+  margin-top: 3rem;
+  margin-bottom: 1rem; }
+
+.copy-legal ol, .copy-legal ul {
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem; }
+
+@media screen and (min-width: 1024px) {
+  .copy-legal {
+    max-width: 75%; } }
+
 .navbar.navbar-main {
   padding: .5rem 1rem; }
   @media screen and (min-width: 1024px) {
