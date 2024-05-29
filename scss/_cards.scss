@@ -157,3 +157,19 @@ section.section.bg-gray{
         margin-bottom: .5rem;
     }
 }
+
+//Card precio
+
+.card-precio{
+    background-color: $white;
+    @include radius-md;
+    padding: 1rem;
+    @include tablet{
+        padding: 2rem;
+    }
+    text-align: center;
+    p.precio{
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+}
