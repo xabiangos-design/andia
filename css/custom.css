@@ -7426,7 +7426,8 @@ form.form-contacto label {
 form.form-contacto .field {
   margin-bottom: 1.2rem; }
   form.form-contacto .field.is-checkbox {
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
     form.form-contacto .field.is-checkbox a {
       color: #ffffff;
       text-decoration: underline; }
